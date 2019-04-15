@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="schedulePane" prefHeight="540.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ScheduleUIController">
+   <children>
+      <Label graphicTextGap="50.0" prefHeight="140.0" prefWidth="826.0" text="BOSTON  TRAIN  SCHEDULE">
+         <font>
+            <Font name="Roboto Bold Condensed" size="36.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/logo256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+      </Label>
+      <Line endX="726.0" layoutX="100.0" layoutY="140.0" startX="-100.0" strokeWidth="0.2" />
+      <VBox fx:id="vbox" alignment="CENTER" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="826.0">
+         <padding>
+            <Insets bottom="40.0" top="40.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <JFXRadioButton fx:id="opposite" text="Oppsite Direction" />
+                  <JFXRadioButton fx:id="forward" text="Forward Direction" />
+               </children>
+            </HBox>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#search" prefHeight="40.0" prefWidth="200.0" styleClass="searchbutton" stylesheets="@../css/stylesheet.css" text="SEARCH" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto Bold Condensed" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</Pane>

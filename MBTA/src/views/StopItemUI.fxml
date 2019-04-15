@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StopItemUIController">
+   <children>
+      <Label fx:id="subway_title" graphicTextGap="60.0">
+         <font>
+            <Font name="Roboto Bold Condensed Italic" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="subway_icon" fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+      </Label>
+      <JFXListView fx:id="itemlistview" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="826.0" styleClass="mylistview" stylesheets="@../css/stylesheet.css" verticalGap="20.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXListView>
+   </children>
+</Pane>

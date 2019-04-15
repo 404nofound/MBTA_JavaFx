@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PredictionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PredictionUIController">
+   <children>
+      <Label graphicTextGap="50.0" prefHeight="140.0" prefWidth="826.0" text="BOSTON  TRAIN  PREDICTION">
+         <font>
+            <Font name="Roboto Bold Condensed" size="36.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/logo256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+      </Label>
+      <Line endX="726.0" layoutX="100.0" layoutY="140.0" startX="-100.0" strokeWidth="0.2" />
+      <VBox alignment="CENTER" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="826.0" spacing="30.0">
+         <children>
+            <JFXComboBox fx:id="nearbystop" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#loadnearbystop" prefHeight="50.0" prefWidth="400.0" promptText="Select Nearby Stop" styleClass="combo-box-popup" stylesheets="@../css/stylesheet.css" />
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="400.0" text="--------OR---------" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto Black" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="subwayline" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#loadstops" prefHeight="50.0" prefWidth="400.0" promptText="Select Train Line" styleClass="combo-box-popup" stylesheets="@../css/stylesheet.css" />
+            <JFXComboBox fx:id="specialstop" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" promptText="Select Special Stop" styleClass="combo-box-popup" stylesheets="@../css/stylesheet.css" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#search" prefHeight="40.0" prefWidth="200.0" ripplerFill="BLACK" styleClass="searchbutton" stylesheets="@../css/stylesheet.css" text="SEARCH" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto Bold Condensed" size="16.0" />
+               </font>
+            </JFXButton>
+         </children></VBox>
+   </children>
+</Pane>

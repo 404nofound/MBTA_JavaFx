@@ -1,0 +1,124 @@
+.sidePane {
+    -fx-background-color: #292728;
+}
+
+.contentPane {
+    -fx-background-color: #F0F0F0;
+}
+
+.buttons {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+}
+
+.buttons:hover {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-color: #B20837;
+    -fx-border-width: 0px 0px 0px 6px;
+    -fx-border-style: solid;
+}
+
+.buttons:focused {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-color: #B20837;
+    -fx-border-width: 0px 0px 0px 6px;
+    -fx-border-style: solid;
+}
+
+.closebtn {
+    -fx-background-color: transparent;
+}
+
+.closebtn:hover {
+    -fx-background-color: #cccccc;
+}
+
+#roundLabel {
+    -fx-background-color: #B20837;
+    -fx-background-radius: 100%;
+}
+
+.mylistview .scroll-bar:horizontal .track,
+.mylistview .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+ 
+.mylistview .scroll-bar:horizontal .increment-button ,
+.mylistview .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+}
+ 
+.mylistview .scroll-bar:vertical .increment-button ,
+.mylistview .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+}
+.mylistview  .scroll-bar .increment-arrow,
+.mylistview  .scroll-bar .decrement-arrow{
+    -fx-shape:" ";
+    -fx-padding:0;
+}
+ 
+.mylistview .scroll-bar:horizontal .thumb,
+.mylistview .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.mylistview .list-cell:selected {
+    -fx-background-color: white;
+}
+
+.mylistview .list-cell:hover {
+    -fx-background-color: #e6e6e6;
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 0px 6px;
+    -fx-border-style: solid;
+}
+
+.jfx-rippler {
+    -jfx-rippler-fill: #cccccc;
+}
+
+.combo-box-popup {
+    -fx-font-family: Roboto Cn;
+    -fx-font-weight: bold;
+    -fx-font-size : 12pt;
+}
+
+.speciallabel {
+    -fx-font-family: Roboto Cn;
+    -fx-font-weight: bold;
+    -fx-font-size : 12pt;
+}
+
+.causelabel {
+    -fx-font-family: Roboto Cn;
+    -fx-font-weight: bold;
+    -fx-font-size : 15pt;
+}
+
+.specialtext {
+    -fx-font-family: Microsoft YaHei;
+    -fx-font-size : 15pt;
+}
+
+.searchbutton {
+     -jfx-button-type: RAISED;
+     -fx-background-color: #292728;
+     -fx-text-fill: white;
+}
+
+.searchbutton:hover {
+    -fx-background-radius: 5px;
+    -fx-background-color: #515151;
+}
