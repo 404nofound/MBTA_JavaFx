@@ -1,5 +1,10 @@
 # MBTA_JavaFx
+
 JavaFx Desktop Application for Boston Trains
+
+Please modifty the IP, username, password in MBTA/src/utils/JDBCUtil.java<br>
+
+If you need the files in server, please feel free to contact me.
 
 ### FrameWork - MVC
 
